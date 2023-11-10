@@ -1,0 +1,28 @@
+.contenedorPrincipal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.contenedorNorte {
+    flex: 1; /*establece propiedad de flex.ocupando todo el espacio disponible  */
+    display:flex;/* Convierte el elemento en un contenedor flexible */
+    flex-direction:row-reverse;/* Establece la dirección en sentido opuesto de der a izq */
+    justify-content: space-between;/* Distribuye espacio sobrante a lo largo del eje principal, creando espacio entre los elementos secundarios */
+    padding: 20px;/*relleno de 20 píxeles a todos los lados del elemento secundario */
+    box-sizing: border-box;/* Establece modelo de caja para incluir el relleno y el borde en la anchura y altura del elemento */
+    width: calc(50% - 40px);/*ancho del elemento al 50% del contenedor menos 40 píxeles */
+    height: calc(50% - 40px);/* altura del elemento al 50% del contenedor menos 40 píxeles */
+    background-color: #b5e2e2; /* Color azul pastel */
+    align-self: flex-start;/* Alinea el elemento en el inicio del eje transversal (eje vertical) */
+
+    margin:auto;/* Establece márgenes izq y der dl conten en autom para centrarlo */
+    display:flex;/* Convierte el contenedor en un contenedor flexible */
+    flex-wrap:wrap;/* Permite q ls elem secund se envuelvan en varias líneas si no hay suficiente espacio en una sola línea */
+    width:400px; /* Establece el ancho del contenedor en 800 píxeles */
+    height:400px; /* Establece la altura del contenedor en 800 píxeles */
+    border:20px white solid;/* Def un borde blanco sólido 20 px alrededor del contenedor */
+    background-color: rgb(240, 225, 139);/* color de fondo dl contened usa model color RGB */
+    justify-content:space-around;/* Distribuye el espacio sobrante alrededor de obj, crea espacios iguls entre ellos */
+    align-items:center; /* Centra verticalmente los elementos secundarios dentro del contenedor, ls alinea en el centro del eje transversal */
+}

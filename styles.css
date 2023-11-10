@@ -1,0 +1,149 @@
+/* Estilos para el header */
+header {
+    background-color:#800080; /* Color de fondo del encabezado */
+    color: white; /* Color del texto */
+    text-align: center; /* Alinea el texto al centro */
+    padding: 10px; /* Agrega relleno alrededor del encabezado */
+    width:100%; /* Ocupa el ancho completo del contenedor principal */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ff99cc;
+    color: #800080;
+}
+
+
+.contenedorPrincipal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.contenedorNorte {
+    flex: 1; /*establece propiedad de flex.ocupando todo el espacio disponible  */
+    display:flex;/* Convierte el contenedor en un contenedor flexible */
+    flex-wrap:wrap;/* Permite q ls elem secund se envuelvan en varias líneas si no hay suficiente espacio en una sola línea */
+    width:400px; /* Establece el ancho del contenedor en 400 píxeles */
+    height:400px; /* Establece la altura del contenedor en 400 píxeles */
+    border:20px white solid;/* Def un borde blanco sólido 20 px alrededor del contenedor */
+    background-color: rgb(240, 225, 139);/* color de fondo dl contened usa model color RGB */
+    justify-content:space-around;/* Distribuye el espacio sobrante alrededor de obj, crea espacios iguls entre ellos */
+    align-items:center; /* Centra verticalmente los elementos secundarios dentro del contenedor, ls alinea en el centro del eje transversal */
+}
+
+.contenedorSur{
+    background-color: #ffd8bf; /* Color naranja pastel */
+    align-self: flex-end;
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    width:400px; /* Establece el ancho del contenedor en 400 píxeles */
+    height:400px; /* Establece la altura del contenedor en 400 píxeles */
+
+}
+.contenedorOeste{
+    background-color:lightgreen; /* Color lila pastel */
+    align-self: flex-end;
+    flex: 3;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width:400px; /* Establece el ancho del contenedor en 400 píxeles */
+    height:400px; /* Establece la altura del contenedor en 400 píxeles */
+}
+.col {
+    background-color: #7f7ff4; /* Color lila pastel */
+    align-self: flex-end;
+    flex: 3;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width:400px; /* Establece el ancho del contenedor en 400 píxeles */
+    height:400px; /* Establece la altura del contenedor en 400 píxeles */
+}
+
+.contenedorEste {
+    background-color: #52cdd6; /* Color verde pastel */
+    align-self: flex-end;
+    flex: 4;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    width:400px; /* Establece el ancho del contenedor en 400 píxeles */
+    height:400px; /* Establece la altura del contenedor en 400 píxeles */
+}
+
+.accordion {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.accordion-item{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}
+
+.myaccordion{
+    text-align: center;
+    background-color: #ece2e2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(38, 38, 38, 0.2);
+}
+
+.card-body{
+    text-align: center;
+    background-color: #d74343;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(38, 38, 38, 0.2);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(118, 206, 206);
+}
+.mb-0{
+    background-color: rgb(225, 235, 82); /* Color de fondo del acordeón */
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.accordion-body {
+    background-color: rgb(225, 235, 82); /* Color de fondo del acordeón */
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.acordeon input[type="checkbox"] {
+    display: none;
+}
+
+.acordeon div {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.acordeon input:checked + label + div {
+    display: block;
+}
